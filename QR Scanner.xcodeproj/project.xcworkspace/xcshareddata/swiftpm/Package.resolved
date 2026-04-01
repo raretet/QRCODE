@@ -1,0 +1,24 @@
+{
+  "originHash" : "9767b692512041f0b079d8291e153469fd12a66e38494d4f85dbf2d0960034dc",
+  "pins" : [
+    {
+      "identity" : "apphudsdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apphud/ApphudSDK.git",
+      "state" : {
+        "revision" : "4e030ce813184c85d0a252e43e1591ddc4a1f6e6",
+        "version" : "4.0.4"
+      }
+    },
+    {
+      "identity" : "appsflyerframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AppsFlyerSDK/AppsFlyerFramework",
+      "state" : {
+        "revision" : "d23b242b28c663618bce5fe9e2f3adb85b32bfb3",
+        "version" : "6.17.9"
+      }
+    }
+  ],
+  "version" : 3
+}

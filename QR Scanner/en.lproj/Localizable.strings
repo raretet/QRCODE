@@ -1,0 +1,53 @@
+"scan.title" = "Scan QR Code";
+"scan.camera_required" = "Camera access required";
+"scan.flash_on" = "Flash On";
+"scan.flash_off" = "Flash Off";
+
+"common.history" = "History";
+"common.gallery" = "Gallery";
+"common.copy" = "Copy";
+"common.share" = "Share";
+"common.save" = "Save";
+"common.copied" = "Copied";
+"common.cancel" = "Cancel";
+
+"result.title" = "Scan Result";
+"result.success_title" = "Scan Successful";
+"result.success_subtitle" = "QR code decoded successfully";
+"result.full_content" = "Full Content";
+"result.scanned" = "Scanned";
+"result.type" = "Type";
+"result.open_link" = "Open Link";
+"result.add_to_contacts" = "Add to Contacts";
+"result.connect_wifi" = "Connect to WiFi";
+"result.contact_copied" = "Contact copied";
+"result.wifi_copied" = "Wi-Fi data copied";
+"result.scan_another" = "Scan Another QR Code";
+
+"mycodes.title" = "My QR Codes";
+"mycodes.empty_title" = "No saved codes yet";
+"mycodes.empty_subtitle" = "Codes you scan or create will show up here.";
+"mycodes.filter_empty_title" = "Nothing in this category";
+"mycodes.filter_empty_subtitle" = "Try another filter or add a new code.";
+
+"create.title" = "Create QR Code";
+"create.content_type" = "Content Type";
+"create.website_url" = "Website URL";
+"create.design_options" = "Design Options";
+"create.color" = "Color";
+"create.add_logo" = "+ Add Logo";
+"create.pro_feature" = "Pro Feature";
+"create.generate" = "Generate QR Code";
+
+"history.clear_all" = "Clear All";
+"history.clear_confirm" = "Clear history?";
+"history.empty_title" = "No history yet";
+"history.empty_subtitle" = "Scanned and created codes will appear here.";
+"history.filter_empty_title" = "Nothing in this filter";
+"history.filter_empty_subtitle" = "Try another tab or scan a QR code.";
+
+"pricing.restore" = "Restore";
+"pricing.continue" = "Continue";
+"pricing.renewable" = "Auto-renewable. Cancel anytime.";
+"pricing.terms" = "Terms of Service";
+"pricing.privacy" = "Privacy Policy";

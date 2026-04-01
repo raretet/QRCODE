@@ -1,0 +1,53 @@
+"scan.title" = "Сканировать QR-код";
+"scan.camera_required" = "Требуется доступ к камере";
+"scan.flash_on" = "Вспышка вкл";
+"scan.flash_off" = "Вспышка выкл";
+
+"common.history" = "История";
+"common.gallery" = "Галерея";
+"common.copy" = "Копировать";
+"common.share" = "Поделиться";
+"common.save" = "Сохранить";
+"common.copied" = "Скопировано";
+"common.cancel" = "Отмена";
+
+"result.title" = "Результат сканирования";
+"result.success_title" = "Сканирование успешно";
+"result.success_subtitle" = "QR-код успешно распознан";
+"result.full_content" = "Полное содержимое";
+"result.scanned" = "Сканировано";
+"result.type" = "Тип";
+"result.open_link" = "Открыть ссылку";
+"result.add_to_contacts" = "Добавить в контакты";
+"result.connect_wifi" = "Подключиться к Wi‑Fi";
+"result.contact_copied" = "Контакт скопирован";
+"result.wifi_copied" = "Данные Wi‑Fi скопированы";
+"result.scan_another" = "Сканировать другой QR-код";
+
+"mycodes.title" = "Мои QR-коды";
+"mycodes.empty_title" = "Пока нет сохраненных кодов";
+"mycodes.empty_subtitle" = "Коды, которые вы сканируете или создаете, появятся здесь.";
+"mycodes.filter_empty_title" = "В этой категории пусто";
+"mycodes.filter_empty_subtitle" = "Выберите другой фильтр или добавьте новый код.";
+
+"create.title" = "Создать QR-код";
+"create.content_type" = "Тип содержимого";
+"create.website_url" = "Ссылка сайта";
+"create.design_options" = "Параметры дизайна";
+"create.color" = "Цвет";
+"create.add_logo" = "+ Добавить логотип";
+"create.pro_feature" = "Pro-функция";
+"create.generate" = "Сгенерировать QR-код";
+
+"history.clear_all" = "Очистить все";
+"history.clear_confirm" = "Очистить историю?";
+"history.empty_title" = "История пуста";
+"history.empty_subtitle" = "Сканированные и созданные коды появятся здесь.";
+"history.filter_empty_title" = "По этому фильтру пусто";
+"history.filter_empty_subtitle" = "Выберите другой фильтр или отсканируйте QR-код.";
+
+"pricing.restore" = "Восстановить";
+"pricing.continue" = "Продолжить";
+"pricing.renewable" = "Автопродление. Можно отменить в любой момент.";
+"pricing.terms" = "Условия использования";
+"pricing.privacy" = "Политика конфиденциальности";

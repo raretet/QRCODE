@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'QR Scanner' in project 'QR Scanner' (no dependencies)

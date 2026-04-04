@@ -16,6 +16,8 @@ struct ContentView: View {
                 MainTabContainerView()
             case .paywall:
                 PricingView()
+            case .settings:
+                SettingsView()
             }
         }
         .preferredColorScheme(.light)

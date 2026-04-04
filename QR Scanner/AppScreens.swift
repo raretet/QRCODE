@@ -856,7 +856,7 @@ struct MainTabContainerView: View {
             HStack {
                 Spacer(minLength: 0)
                 Button {
-                    appModel.showPaywall(source: .feature)
+                    appModel.openSettings()
                 } label: {
                     ZStack {
                         Circle()
@@ -872,7 +872,7 @@ struct MainTabContainerView: View {
                     .frame(width: fabSide, height: fabSide)
                 }
                 .buttonStyle(.plain)
-                .accessibilityLabel("Open pricing")
+                .accessibilityLabel(L("settings.title"))
                 Spacer(minLength: 0)
             }
         }
@@ -3216,6 +3216,78 @@ struct PaywallView: View {
         }
         .padding(18)
         .appCardStyle(radius: 24)
+    }
+}
+
+struct SettingsView: View {
+    @EnvironmentObject private var appModel: AppModel
+    @EnvironmentObject private var webGate: QRWebGate
+
+    var body: some View {
+        ZStack {
+            AppTheme.Colors.figmaCanvas.ignoresSafeArea()
+            VStack(spacing: 0) {
+                settingsHeader
+                    .padding(.horizontal, 24)
+                    .padding(.top, 24)
+
+                Button {
+                    webGate.showPrivacySheet = true
+                } label: {
+                    HStack {
+                        Text(L("settings.privacy_policy"))
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundColor(AppTheme.Colors.figmaInk)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundColor(AppTheme.Colors.figmaMuted)
+                    }
+                    .padding(18)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(Color.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 16, style: .continuous)
+                            .stroke(AppTheme.Colors.figmaLine, lineWidth: 1)
+                    )
+                }
+                .buttonStyle(.plain)
+                .padding(.horizontal, 24)
+                .padding(.top, 24)
+
+                Spacer(minLength: 0)
+            }
+        }
+    }
+
+    private var settingsHeader: some View {
+        HStack(alignment: .center, spacing: 0) {
+            Button {
+                appModel.closeSettings()
+            } label: {
+                Image(systemName: "xmark")
+                    .font(.system(size: 16, weight: .semibold))
+                    .foregroundColor(AppTheme.Colors.figmaMuted)
+                    .frame(width: 40, height: 40)
+                    .background(Color.white)
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(AppTheme.Colors.figmaLine, lineWidth: 1))
+            }
+            .buttonStyle(.plain)
+
+            Spacer(minLength: 0)
+
+            Text(L("settings.title"))
+                .font(.system(size: 17, weight: .semibold))
+                .foregroundColor(AppTheme.Colors.figmaInk)
+
+            Spacer(minLength: 0)
+
+            Color.clear
+                .frame(width: 40, height: 40)
+        }
+        .frame(maxWidth: .infinity)
     }
 }
 

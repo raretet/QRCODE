@@ -51,3 +51,6 @@
 "pricing.renewable" = "Автопродление. Можно отменить в любой момент.";
 "pricing.terms" = "Условия использования";
 "pricing.privacy" = "Политика конфиденциальности";
+
+"settings.title" = "Настройки";
+"settings.privacy_policy" = "Политика конфиденциальности";

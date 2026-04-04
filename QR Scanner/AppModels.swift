@@ -6,6 +6,7 @@ enum AppRoute {
     case onboarding
     case main
     case paywall
+    case settings
 }
 
 enum MainTab: CaseIterable {
@@ -118,6 +119,8 @@ struct MyQRCodeItem: Identifiable, Codable {
 }
 
 final class AppModel: ObservableObject {
+    private static let onboardingCompletedKey = "qr_scanner.onboarding.completed"
+
     @Published var route: AppRoute = .splash
     @Published var selectedTab: MainTab = .home
     @Published var isPremium: Bool = false
@@ -142,17 +145,30 @@ final class AppModel: ObservableObject {
     init() {
         hydrate()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
-            self.route = .onboarding
+            if UserDefaults.standard.bool(forKey: Self.onboardingCompletedKey) {
+                self.route = .main
+            } else {
+                self.route = .onboarding
+            }
         }
     }
     
     func finishOnboarding() {
+        UserDefaults.standard.set(true, forKey: Self.onboardingCompletedKey)
         route = .main
     }
     
     func showPaywall(source: PaywallSource) {
         _ = source
         route = .paywall
+    }
+
+    func openSettings() {
+        route = .settings
+    }
+
+    func closeSettings() {
+        route = .main
     }
     
     func closePaywall() {

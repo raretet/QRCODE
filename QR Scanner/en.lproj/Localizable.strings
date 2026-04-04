@@ -51,3 +51,6 @@
 "pricing.renewable" = "Auto-renewable. Cancel anytime.";
 "pricing.terms" = "Terms of Service";
 "pricing.privacy" = "Privacy Policy";
+
+"settings.title" = "Settings";
+"settings.privacy_policy" = "Privacy Policy";
